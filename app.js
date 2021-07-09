@@ -89,3 +89,38 @@ function calculateSide( x, y)
 
 const sideC = calculateSide(3, 4);
 console.log(sideC);
+
+//7. Prime Numbers
+/* 1 */
+function checkPrime(num)
+{   
+    let isPrime = true
+    if (num < 2)
+    {
+        isPrime = false
+    }
+    else
+    {
+        for (let i = 2; i <= Math.floor(Math.sqrt(num)); i++)
+        {
+            if (num % i === 0)
+            {
+                isPrime = false
+            }
+        }
+    }
+    return isPrime   
+}
+console.log(checkPrime(4))
+/* 2 */
+function printPrimes(num)
+{
+    for (let i = 0; i <= num; i++)
+    {
+        if (checkPrime(i))
+        {
+            console.log(i)
+        }
+    }
+}
+printPrimes(100)
