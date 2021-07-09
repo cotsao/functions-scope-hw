@@ -169,3 +169,19 @@ function checkPalindrome2(word)
     }
 }
 console.log(checkPalindrome2("Sit on a potato pan Otis"))
+//11. Palindrome pt. 3
+function checkPalindrome3(word)
+{
+    const punct = /[!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~]/g
+    let lowerWord = word.toLowerCase().replace(punct,"").split(" ").join("")
+    let reverseWord = lowerWord.split("").reverse().join("")
+    if (reverseWord === lowerWord)
+    {
+        return true
+    }
+    else
+    {
+        return false
+    }
+}
+console.log(checkPalindrome3("Cigar? Toss it in a can! It is so tragic."))
