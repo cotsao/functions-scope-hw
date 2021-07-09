@@ -65,3 +65,19 @@ function sumArray (arr)
 }
 const sum = sumArray([1, 2, 3, 4, 5, 6]);
 console.log(sum);
+
+//5. Digit Sum
+function sumDigits(num)
+{
+    let total = 0
+    let numString = num.toString().split("")
+    for (let i = 0; i < numString.length; i++)   
+    {
+
+        total+=parseInt( numString[i])
+    }
+    return total
+}
+const sum1 = sumDigits(123);
+console.log(sum1);
+
