@@ -141,3 +141,14 @@ function insertDash(num)
     return tempString
 }
 console.log(insertDash(454793))
+
+//9. Reverse a String
+function reverseString( word )
+{
+    let reverseWord = ""
+    for (let i = word.length - 1; i >= 0; i --)
+    {
+        reverseWord += word[i]
+    }
+    return reverseWord
+}
