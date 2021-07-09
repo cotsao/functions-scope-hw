@@ -185,3 +185,20 @@ function checkPalindrome3(word)
     }
 }
 console.log(checkPalindrome3("Cigar? Toss it in a can! It is so tragic."))
+
+//12. Palindrome pt. 4
+function checkPalindrome4(phrase)
+{
+    const punct = /[!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~]/g
+    let lowerPhrase = phrase.toLowerCase().replace(punct,"").split(" ").join(" ")
+    let reverseWord = lowerPhrase.split(" ").reverse().join(" ")
+    if (reverseWord === lowerPhrase)
+    {
+        return true
+    }
+    else
+    {
+        return false
+    }
+}
+console.log(checkPalindrome4('Son, I am able," she said. "Though you scare me, watch!" said I, "Beloved," I said, "watch me scare you!" Though, said she: "able am I, son.'))
