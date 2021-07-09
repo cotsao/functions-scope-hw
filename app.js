@@ -32,4 +32,23 @@ let wordIsPaindrome = checkPalindrome("Radar");
 console.log(wordIsPaindrome);
 wordIsPaindrome = checkPalindrome("Cat");
 console.log(wordIsPaindrome);
+
+//3. Check a List
+
+function checkForStudent(name, arr)
+{   let x = false
+    for (let i = 0; i <arr.length; i++)
+    {
+        if (name === arr[i])
+        {
+            x = true
+        }
+    }
+    return x
+}
+
+let studentIncluded =  checkForStudent('Sally', ['Sally', 'Kyle']);
+console.log(studentIncluded);
+studentIncluded =  checkForStudent('Ron', ['Sally', 'Kyle']);
+console.log(studentIncluded);
     
