@@ -81,3 +81,11 @@ function sumDigits(num)
 const sum1 = sumDigits(123);
 console.log(sum1);
 
+//6. Pythagoras
+function calculateSide( x, y)
+{
+    return Math.sqrt( x*x + y*y)
+}
+
+const sideC = calculateSide(3, 4);
+console.log(sideC);
