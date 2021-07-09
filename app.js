@@ -11,3 +11,25 @@ Return allows a function to output a value, console.log just prints to the conso
 3. What are the implications of the ability of a function to return a value? 
 This allows the programmer to more concisely get desired values. For instance, if a function was created to get the min number of an array, the return function would allow the programmer to use that number more easily.
 */
+
+//2. Palindrome
+
+function checkPalindrome(word)
+{
+    let lowerWord = word.toLowerCase()
+    let reverseWord = lowerWord.split("").reverse().join("")
+    if (reverseWord === lowerWord)
+    {
+        return true
+    }
+    else
+    {
+        return false
+    }
+
+}
+let wordIsPaindrome = checkPalindrome("Radar");
+console.log(wordIsPaindrome);
+wordIsPaindrome = checkPalindrome("Cat");
+console.log(wordIsPaindrome);
+    
