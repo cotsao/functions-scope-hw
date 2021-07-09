@@ -152,3 +152,20 @@ function reverseString( word )
     }
     return reverseWord
 }
+
+//10. Palindrome pt. 2
+
+function checkPalindrome2(word)
+{
+    let lowerWord = word.toLowerCase().split(" ").join("")
+    let reverseWord = lowerWord.split("").reverse().join("")
+    if (reverseWord === lowerWord)
+    {
+        return true
+    }
+    else
+    {
+        return false
+    }
+}
+console.log(checkPalindrome2("Sit on a potato pan Otis"))
