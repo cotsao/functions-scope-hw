@@ -124,3 +124,20 @@ function printPrimes(num)
     }
 }
 printPrimes(100)
+
+//8. Insert Dash
+function insertDash(num)
+{
+    let numString = num.toString().split("")
+    let tempString =""  
+     for (let i = 1; i < numString.length; i++)
+    {
+        if ( parseInt(numString[ i - 1]) % 2 != 0 && parseInt(numString[i]) % 2 != 0 )
+        {
+            tempString+='-'
+        } 
+        tempString+=numString[i]    } 
+    
+    return tempString
+}
+console.log(insertDash(454793))
